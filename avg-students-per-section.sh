@@ -6,10 +6,15 @@ CERT_FILE='ca-certificates.crt'
 CERT_URL='https://raw.github.com/Clever/clever-php/master/lib/data/ca-certificates.crt'
 API_KEY='DEMO_KEY'
 VERBOSE=""
+CACHE=""
 
 while (( "$#" )) ; do
     if [ "$1" == "-v" ] ; then
         VERBOSE=1
+        shift
+    fi
+    if [ "$1" == "-c" ] ; then
+        CACHE=1
         shift
     fi
 done
@@ -82,5 +87,8 @@ STUDENTS_PER_SECTION=`echo "scale=2;${STUDENT_COUNT}.0 / ${SECTION_COUNT}.0" | b
 echo "Students per Section: ${STUDENTS_PER_SECTION}"
 
 scrub "${TEMP_FILE}"
-scrub "${DATA_FILE}"
-scrub "${CERT_FILE}"
+
+if [ -z "${CACHE}" ] ; then
+    scrub "${DATA_FILE}"
+    scrub "${CERT_FILE}"
+fi

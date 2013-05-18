@@ -12,10 +12,11 @@ Usage:
 ./avg-students-per-section.sh
 ```
 
-There's a _verbose_ mode if you want to watch it fetch:
+Options:
 
 ```
-./avg-students-per-section.sh -v
+-v		Verbose mode
+-c		Cache fetched files
 ```
 
 The script will try to use `wget` or `curl`, whichever is available.  It also uses some basic *nix utilities, like `bc`, `tr`, `wc`, and `grep`, all of which should be available on pretty much any modern system.
