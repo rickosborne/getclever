@@ -28,3 +28,12 @@ There are some hacks in place to keep it relatively simple:
 
 Total time to complete: **~90 minutes**, including a refresher on BASH and the utilities listed above.  The API docs are pretty solid and took ~45 seconds to find what I needed.
 
+## ColdFusion
+
+There's a ColdFusion version of the script, because:
+
+1. I don't do much CF these days, but I did it for almost 15 years so ... why not?
+2. The more interesting languages already have libraries in the Clever GitHub, and that doesn't show a ton of skill to use an existing library.
+
+I had the thought that I could build/translate one of the other libraries to CF.  It would probably take an hour or two ... but the utility seemed limited.
+
