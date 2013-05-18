@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Clever Rick</string>
+    <string name="apiKeyDefault">DEMO_KEY</string>
+    <string name="apiSections">https://api.getclever.com/v1.1/sections</string>
+    <string name="labelApiKey">API Key</string>
+    <string name="labelFetch">Fetch Data</string>
+    <string name="lblSectionCount">Sections:</string>
+    <string name="lblStudentCount">Students:</string>
+    <string name="lblStudentsPerSection">Stu/Section:</string>
+    <string name="unknown"></string>
+    <string name="alertDismiss">That\'s just, like, your opinion, man.</string>
+    <string name="errorNoInternet">Cannot connect to the API.  Are you online?</string>
+
+</resources>

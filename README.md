@@ -39,5 +39,5 @@ I had the thought that I could build/translate one of the other libraries to CF.
 
 ## Android
 
-This _should_ work with anything Froyo or newer.  Like the rest, it's not pretty but it gets it done.
+This _should_ work with anything Gingerbread or newer.  Like the rest, it's not pretty but it gets it done.
 

@@ -1,0 +1,18 @@
+# incremental data. DO NOT EDIT.
+# format is <lastModified> <length> <SHA-1> <path>
+# Encoding is UTF-8
+1368920150000 1483 7bc30e157fbdcfeb1bc77cfd879c8fa996e6617f /Users/rosborne/www/getclever/android/CleverRick/CleverRick/build/classes/debug/org/rickosborne/mobile/cleverrick/MainActivity$AsyncGetData$1.class
+1368920150000 827 2ff2337a36927ae7def5d688f54549a75d1c3e14 /Users/rosborne/www/getclever/android/CleverRick/CleverRick/build/classes/debug/org/rickosborne/mobile/cleverrick/R.class
+1368920150000 1505 97dedce9adcd096eb43a33e675be7156a9ecfa2a /Users/rosborne/www/getclever/android/CleverRick/CleverRick/build/classes/debug/org/rickosborne/mobile/cleverrick/MainActivity$1.class
+1368920150000 476 41162f1ffe20aebde4aaae0b5d26779598704d97 /Users/rosborne/www/getclever/android/CleverRick/CleverRick/build/classes/debug/org/rickosborne/mobile/cleverrick/R$style.class
+1368920150000 433 98b811808b48ef3c2f0ee202dd2e14cee9c05c12 /Users/rosborne/www/getclever/android/CleverRick/CleverRick/build/classes/debug/org/rickosborne/mobile/cleverrick/R$menu.class
+1368920150000 496 fb9e9850fed1b81eb37f635aeac8af07f070bd22 /Users/rosborne/www/getclever/android/CleverRick/CleverRick/build/classes/debug/org/rickosborne/mobile/cleverrick/R$dimen.class
+1368919498000 452 c481b3ff9fd503582252860feb2fe14d5a87e4a5 /Users/rosborne/www/getclever/android/CleverRick/CleverRick/build/classes/debug/org/rickosborne/mobile/cleverrick/R$drawable.class
+1368920150000 813 05a31cf4cac71de3028751628fec5ee8889b0abd /Users/rosborne/www/getclever/android/CleverRick/CleverRick/build/classes/debug/org/rickosborne/mobile/cleverrick/R$string.class
+1368920150000 958 d196dd3d8fc532452ec165600df35cfb43bf8c9d /Users/rosborne/www/getclever/android/CleverRick/CleverRick/build/classes/debug/org/rickosborne/mobile/cleverrick/R$id.class
+1368919498000 375 787881ce5802c8dbb5ea91469a308a3d90b9ac71 /Users/rosborne/www/getclever/android/CleverRick/CleverRick/build/classes/debug/org/rickosborne/mobile/cleverrick/BuildConfig.class
+1368919422000 484258 bd6479f5dd592790607e0504e66e0f31c2b4d308 /Users/rosborne/www/getclever/android/CleverRick/CleverRick/libs/android-support-v4.jar
+1368920150000 448 4b94c2b1f3d932c06b91caaafd6afe41befb0d9d /Users/rosborne/www/getclever/android/CleverRick/CleverRick/build/classes/debug/org/rickosborne/mobile/cleverrick/R$layout.class
+1368920150000 8117 473f8b858516d7b0b6db7de238db7e81f5623327 /Users/rosborne/www/getclever/android/CleverRick/CleverRick/build/classes/debug/org/rickosborne/mobile/cleverrick/MainActivity$AsyncGetData.class
+1368920150000 5224 1ff1eac3da237f8837b97f80b5870d8ad3714a85 /Users/rosborne/www/getclever/android/CleverRick/CleverRick/build/classes/debug/org/rickosborne/mobile/cleverrick/MainActivity.class
+1368919498000 385 60431bda144b002ea42b9d15e12134777e756820 /Users/rosborne/www/getclever/android/CleverRick/CleverRick/build/classes/debug/org/rickosborne/mobile/cleverrick/R$attr.class
