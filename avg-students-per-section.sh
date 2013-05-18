@@ -33,31 +33,28 @@ function fetch {
     if [ -f "${FETCH_FILE}" ] ; then
         whisper "Found existing ${FETCH_FILE}."
     else
-        CURL_PATH=`which curl`
-        if [ -z "${CURL_PATH}" ] ; then
-            WGET_PATH=`which wget`
-            if [ -z "${WGET_PATH}" ] ; then
-                echo "ERROR: You have neither curl nor wget installed.  Really?"
-                exit 1
-            else
-                whisper "Using ${WGET_PATH} to fetch ${FETCH_URL} into ${FETCH_FILE}."
-                # ouch, encapsulation
-                if [ -f "${CERT_FILE}" ] ; then
-                    CERT_OPT=--ca-certificate="${CERT_FILE}"
-                else
-                    CERT_OPT=--no-check-certificate
-                fi
-                eval $WGET_PATH -q --http-user="${API_KEY}" --http-password="" -O "${FETCH_FILE}" $CERT_OPT "${FETCH_URL}"
-            fi
+        AGENT_PATH=`which curl`
+        AGENT_ARGS="-s -u \"${API_KEY}:\" -o \"${FETCH_FILE}\" -u \"${API_KEY}:\""
+        if [ -f "${CERT_FILE}" ] ; then
+            CERT_OPT='--cacert "${CERT_FILE}"'
         else
-            whisper "Using ${CURL_PATH} to fetch ${FETCH_URL} into ${FETCH_FILE}."
-            if [ -f "${CERT_FILE}" ] ; then
-                CERT_OPT='--cacert "${CERT_FILE}"'
-            else
-                CERT_OPT=--insecure
-            fi
-            eval $CURL_PATH $CERT_OPT -s -o "${FETCH_FILE}" -u "${API_KEY}:" "${FETCH_URL}"
+            CERT_OPT=--insecure
         fi
+        if [ -z "${AGENT_PATH}" ] ; then
+            AGENT_PATH=`which wget`
+            AGENT_ARGS="-q --http-user=\"${API_KEY}\" --http-password=\"\" -O \"${FETCH_FILE}\""
+            if [ -f "${CERT_FILE}" ] ; then
+                CERT_OPT=--ca-certificate="${CERT_FILE}"
+            else
+                CERT_OPT=--no-check-certificate
+            fi
+        fi
+        if [ -z "${AGENT_PATH}" ] ; then
+            echo "ERROR: You have neither curl nor wget installed.  Really?"
+            exit 1
+        fi
+        whisper "Using ${AGENT_PATH} to fetch ${FETCH_URL} into ${FETCH_FILE}."
+        eval $AGENT_PATH $AGENT_ARGS $CERT_OPT "${FETCH_URL}"
     fi
 }
 
