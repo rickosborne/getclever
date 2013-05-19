@@ -43,7 +43,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="1234" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70u-re-RVS">
+                                    <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70u-re-RVS">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="2Qp-mf-7vG"/>
                                         </constraints>
@@ -56,7 +56,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="1234" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMh-sR-PBo">
+                                    <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMh-sR-PBo">
                                         <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -66,7 +66,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="1234" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXk-ek-Z3W">
+                                    <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXk-ek-Z3W">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="Agh-Yj-GL7"/>
                                         </constraints>
@@ -84,6 +84,8 @@
                                     <constraint firstItem="70u-re-RVS" firstAttribute="baseline" secondItem="9Z8-pu-hiE" secondAttribute="baseline" type="default" id="3ri-NV-TbG"/>
                                     <constraint firstItem="9Z8-pu-hiE" firstAttribute="top" secondItem="BNw-Ju-dC6" secondAttribute="top" constant="20" symbolic="YES" type="default" id="6wJ-Xe-jrp"/>
                                     <constraint firstItem="Co0-YV-K0v" firstAttribute="leading" secondItem="BNw-Ju-dC6" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="FUe-95-5P8"/>
+                                    <constraint firstItem="XXk-ek-Z3W" firstAttribute="centerY" secondItem="d4P-hg-ckG" secondAttribute="centerY" type="default" id="U1D-As-Y6A"/>
+                                    <constraint firstItem="70u-re-RVS" firstAttribute="centerY" secondItem="9Z8-pu-hiE" secondAttribute="centerY" type="default" id="UtW-Bo-ruj"/>
                                     <constraint firstAttribute="trailing" secondItem="70u-re-RVS" secondAttribute="trailing" constant="21" id="YeV-uQ-UFH"/>
                                     <constraint firstAttribute="bottom" secondItem="GMh-sR-PBo" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="bzk-j9-bwV"/>
                                     <constraint firstItem="d4P-hg-ckG" firstAttribute="leading" secondItem="BNw-Ju-dC6" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="eho-Jg-jbO"/>
@@ -91,6 +93,7 @@
                                     <constraint firstItem="GMh-sR-PBo" firstAttribute="leading" secondItem="XXk-ek-Z3W" secondAttribute="leading" type="default" id="qJm-KT-81P"/>
                                     <constraint firstAttribute="trailing" secondItem="XXk-ek-Z3W" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="sFY-E0-aU7"/>
                                     <constraint firstItem="XXk-ek-Z3W" firstAttribute="baseline" secondItem="d4P-hg-ckG" secondAttribute="baseline" type="default" id="tZU-pY-S6s"/>
+                                    <constraint firstItem="GMh-sR-PBo" firstAttribute="centerY" secondItem="Co0-YV-K0v" secondAttribute="centerY" type="default" id="yh4-FO-sYE"/>
                                 </constraints>
                             </view>
                             <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A8N-bL-wbt">

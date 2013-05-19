@@ -50,10 +50,12 @@
     if (isFetching)
     {
         [spinFetch startAnimating];
+        responseData = [[NSMutableString alloc] init];
     }
     else
     {
         [spinFetch stopAnimating];
+        responseData = nil;
     }
 }
 
@@ -81,22 +83,39 @@
     NSDictionary* json = [NSJSONSerialization JSONObjectWithData:[responseData dataUsingEncoding:NSUTF8StringEncoding] options:kNilOptions error:&error];
     if (error == nil)
     {
-        NSDictionary* data = [json valueForKey:@"data"];
-        if (data)
+        NSInteger secCount = 0, stuCount = 0;
+        NSArray* sections = [json valueForKey:@"data"];
+        if (sections)
         {
-            [self logAndLog:[NSString stringWithFormat:@"got data"]];
+            secCount = sections.count;
+            lblSectionCount.text = [NSString stringWithFormat:@"%d", secCount];
+            for (NSObject* section in sections)
+            {
+                NSArray* students = [section valueForKeyPath:@"data.students"];
+                if (students)
+                {
+                    stuCount += students.count;
+                }
+            }
+            lblStudentCount.text = [NSString stringWithFormat:@"%d", stuCount];
+            lblStuPerSec.text = [NSString stringWithFormat:@"%.2f", 1.0f * stuCount / secCount];
+        }
+        else
+        {
+            [self logAndLog:@"No sections were found"];
         }
     }
     else
     {
         [self logAndLog:[NSString stringWithFormat:@"json error:%@", error]];
     }
-    responseData = [[NSMutableString alloc] init];
+    [self setFetchState:NO];
 }
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
 {
 	[self logAndLog:[NSString stringWithFormat:@"%@ didFailWithError:%@", connection.originalRequest.HTTPMethod, error]];
+    [self setFetchState:NO];
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
@@ -111,7 +130,6 @@
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
 {
     [self logAndLog:[NSString stringWithFormat:@"didReceiveResponse:"]];
-    [self setFetchState:NO];
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge
