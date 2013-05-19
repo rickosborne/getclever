@@ -41,3 +41,6 @@ I had the thought that I could build/translate one of the other libraries to CF.
 
 This _should_ work with anything Gingerbread or newer.  Like the rest, it's not pretty but it gets it done.
 
+## iOS
+
+Tested on an iPhone 4 and an iPad 3, both running iOS 6.  I built this using manual fetch instead of the Clever SDK to show that I can do more than just hook into existing code.
