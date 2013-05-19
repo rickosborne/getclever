@@ -31,8 +31,7 @@
                                     <constraint firstItem="HtL-Ac-wJc" firstAttribute="leading" secondItem="xlE-kb-VUd" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="uEn-oK-T0G"/>
                                 </constraints>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ich-oo-zIU">
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ich-oo-zIU">
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
@@ -169,6 +168,25 @@
             </objects>
         </scene>
     </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="fetchData:"/>
+                <relationship kind="outlet" name="btnFetch" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="lblSectionCount" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lblStuPerSec" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lblStudentCount" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="spinFetch" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="txtApiKey" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="txtLog" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="viewInputs" candidateClass="UIView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

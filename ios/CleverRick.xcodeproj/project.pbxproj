@@ -18,6 +18,7 @@
 		B93E6BF61748639E00D202B2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B93E6BF51748639E00D202B2 /* ViewController.m */; };
 		B9CF7EF617487B6B00E599F4 /* app@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9CF7EF517487B6B00E599F4 /* app@2x.png */; };
 		B9CF7EF817487B6F00E599F4 /* app.png in Resources */ = {isa = PBXBuildFile; fileRef = B9CF7EF717487B6F00E599F4 /* app.png */; };
+		B9CF7EFA174885F400E599F4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9CF7EF9174885F400E599F4 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		B93E6BF51748639E00D202B2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B9CF7EF517487B6B00E599F4 /* app@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "app@2x.png"; path = "../app@2x.png"; sourceTree = "<group>"; };
 		B9CF7EF717487B6F00E599F4 /* app.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = app.png; path = ../app.png; sourceTree = "<group>"; };
+		B9CF7EF9174885F400E599F4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		B93E6BCA1748639D00D202B2 = {
 			isa = PBXGroup;
 			children = (
+				B9CF7EF9174885F400E599F4 /* Default-568h@2x.png */,
 				B93E6BDC1748639D00D202B2 /* CleverRick */,
 				B93E6BD51748639D00D202B2 /* Frameworks */,
 				B93E6BD41748639D00D202B2 /* Products */,
@@ -169,6 +172,7 @@
 				B93E6BF31748639E00D202B2 /* MainStoryboard_iPad.storyboard in Resources */,
 				B9CF7EF617487B6B00E599F4 /* app@2x.png in Resources */,
 				B9CF7EF817487B6F00E599F4 /* app.png in Resources */,
+				B9CF7EFA174885F400E599F4 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
