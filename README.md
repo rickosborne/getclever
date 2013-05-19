@@ -1,8 +1,16 @@
 # getclever
 
-Code related to the Clever API and getclever.com
+Code related to the Clever API and getclever.com.
 
-## `avg-students-per-section.sh`
+## Android
+
+This _should_ work with anything Gingerbread or newer.  It's not pretty but it gets it done.  There's a screenshot to show it in use.
+
+## iOS
+
+Tested on an iPhone 4 and an iPad 3, both running iOS 6.  I built this using manual fetch instead of the Clever SDK to show that I can do more than just hook into existing code.  There's a screenshot here, too.
+
+## BASH
 
 Per the Full Stack Engineer test, use the Clever API to fetch and calculate the number of students per section.
 
@@ -37,10 +45,3 @@ There's a ColdFusion version of the script, because:
 
 I had the thought that I could build/translate one of the other libraries to CF.  It would probably take an hour or two ... but the utility seemed limited.
 
-## Android
-
-This _should_ work with anything Gingerbread or newer.  Like the rest, it's not pretty but it gets it done.
-
-## iOS
-
-Tested on an iPhone 4 and an iPad 3, both running iOS 6.  I built this using manual fetch instead of the Clever SDK to show that I can do more than just hook into existing code.
